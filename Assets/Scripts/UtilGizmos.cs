@@ -14,7 +14,7 @@ public static class UtilGizmos
             float angleRad = t * UtilMath.TAU;
 
             // Compute point in 2D
-            Vector2 point2D = UtilMath.GetUnitVectorByAngle(angleRad);
+            Vector2 point2D = UtilMath.GetUnitVectorByAngle(angleRad) * radius;
 
             // Convert point in 3D
             points3D[i] = position + rotation * point2D;
